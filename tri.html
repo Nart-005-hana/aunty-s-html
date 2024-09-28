@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>colourChanger</title>
+</head>
+<body>
+<center>
+<button onclick="color()" >clickme</button>
+</center>
+<script>
+        var arr=["black","red","orange","green","purple","pink","aqua","red","grey","green"]
+        let index=0
+        function color(){
+              document.body.style.backgroundColor=arr[index]
+              index=(index+1)%arr.length
+       }
+
+</script>
+</body>
+</html>
