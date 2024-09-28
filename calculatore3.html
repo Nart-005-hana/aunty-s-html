@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    
+    <h1 align="center"font-size=50px style="background-color:rgb(60, 179, 239);">CALCULATOR</h1>
+   <P style="font-size: large;"CALCULATOR></P>
+   
+   <br><br>
+   
+         
+	
+        
+        <center>
+            <label>enter value for a:</label><br>
+            <input type="text" id="num1" placeholder="first value" >
+            <br><br>
+            <label>enter value for b:</label><br>
+            <input type="text" id="num2" placeholder="second value" >
+            <br>
+            
+            
+        <button onclick="sum()">+</button>
+        <button onclick="differace()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+        
+		
+	</center>
+    
+		<p id="f"></p>
+	<script>
+		function sum(){
+			var a=parseFloat(document.getElementById("num1").value);
+			var b=parseFloat(document.getElementById("num2").value);
+			var sum = a + b
+			document.getElementById("f").innerHTML=sum
+		}
+		
+		function differace(){
+			var a=parseFloat(document.getElementById("num1").value);
+			var b=parseFloat(document.getElementById("num2").value);
+			var sum = a - b
+			document.getElementById("f").innerHTML=sum
+		}function multiplication(){
+			var a=parseFloat(document.getElementById("num1").value);
+			var b=parseFloat(document.getElementById("num2").value);
+			var sum = a *b
+			document.getElementById("f").innerHTML=sum
+		}
+		function division(){
+			var a=parseFloat(document.getElementById("num1").value);
+			var b=parseFloat(document.getElementById("num2").value);
+			var sum = a /b
+			document.getElementById("f").innerHTML=sum
+		}
+	</script>
